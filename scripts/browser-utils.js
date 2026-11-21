@@ -1,0 +1,10 @@
+const isFirefox = typeof browser !== "undefined" && navigator.userAgent.toLowerCase().includes("firefox");
+const isFirefoxAll = navigator.userAgent.toLowerCase().includes("firefox");
+const isChromiumBased = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime) && !isFirefox;
+const isEdge = /Edg/.test(navigator.userAgent);
+const isBrave = !!(navigator.brave && navigator.brave.isBrave());
+const isOpera = /OPR/.test(navigator.userAgent);
+const isChrome = (/Chrome|CriOS/.test(navigator.userAgent)) && /Google Inc/.test(navigator.vendor) && !isEdge && !isBrave && !isOpera;
+const isSafari = /Safari/.test(navigator.userAgent) && !isChromiumBased && /Apple Computer/.test(navigator.vendor);
+const isMac = /Macintosh|MacIntel|MacPPC|Mac68K/.test(navigator.platform);
+const isDesktop = !/Android|iPhone|iPad|iPod/.test(navigator.userAgent);

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности MYNT</title>
+    <link href="favicon/icon128.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, color 0.3s;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        a {
+            color: #6200ea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            word-break: break-word;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            background-color: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #181a20;
+            color: #e0e0e0;
+        }
+        .container.dark-mode {
+            background: #23262f;
+            color: #e0e0e0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+        body.dark-mode a {
+            color: #bb86fc;
+        }
+        body.dark-mode code {
+            background-color: #23262f;
+            color: #bb86fc;
+        }
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            color: #333;
+            border: none;
+            border-radius: 16px;
+            padding: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s;
+            z-index: 10;
+        }
+        .dark-mode-toggle:hover svg {
+            transform: scale(1.02);
+        }
+        body.dark-mode .dark-mode-toggle {
+            background: #23262f;
+            color: #e0e0e0;
+            border: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path id="iconPath" d="" fill="currentColor" />
+        </svg>
+    </button>
+    <div class="container" id="mainContainer">
+        <h1>Политика конфиденциальности для MYNT: Материалы Новая вкладка</h1>
+        <h2>Introduction</h2>
+        <p>"MYNT: Material You New Tab" is an open-source extension designed to enhance the appearance of your browser’s
+            default home page and new tab. It was originally developed as a personal project using HTML, CSS, and
+            JavaScript. Due to positive feedback, it was later made available on both the Firefox and Chrome Web Stores.
+        </p>
+        <h2>Вклад сообщества</h2>
+        <p>Since its release, talented developers from the community have contributed to improving the extension through
+            GitHub. These contributors have added new features and fixed bugs, making the extension even better. Each
+            pull request is carefully reviewed, tested, and verified to ensure it meets our standards before being
+            merged.
+        </p>
+        <h2>Сбор данных и разрешения</h2>
+        <p>MYNT: Новая вкладка Material You отдает приоритет вашей конфиденциальности и ориентирована исключительно на обеспечение лучшего просмотра.
+            опыт. Это расширение делает <strong>не собирать</strong>, <strong>store</strong>, или
+            <strong>share</strong> любые личные данные. Вся обработка выполняется локально в вашем браузере. Никакой аналитики,
+            включены сценарии отслеживания или системы удаленной регистрации.
+        </p>
+        <h3>Permissions</h3>
+        <p> Мы запрашиваем только минимальные разрешения, необходимые для обеспечения богатого и динамичного просмотра. Ниже приведен
+            разбивка используемых разрешений и для чего они нужны:</p>
+        <ul>
+            <li><strong>Search:</strong> Включает интеграцию с поисковой системой браузера по умолчанию.</li>
+            <li><strong>Bookmarks</strong> (необязательно): если предоставлено, позволяет дополнительно отображать ваши закладки непосредственно на
+                новая вкладка.</li>
+            <li><strong>Favicon</strong> (optional): Used to retrieve bookmark favicons from the browser cache. It only
+                returns icons the browser already has cached and does not expose browsing history or page content.</li>
+        </ul>
+        <h3>API браузера</h3>
+        <ul>
+            <li><strong>Распознавание речи (API веб-речи):</strong> Enables voice search. Microphone access is
+                triggered only when the mic icon is clicked and is handled entirely by your browser. No voice data is
+                collected or stored.</li>
+            <li><strong>Geolocation:</strong> Used to improve weather accuracy. Access is browser-managed and is not
+                tracked or shared.</li>
+        </ul>
+        <h3>Внешние API</h3>
+        <p>Для улучшения пользовательского опыта мы используем следующие внешние сервисы:</p>
+        <ul>
+            <li><strong>Поисковые предложения:</strong>
+                <ul>
+                    <li>Google: <code>https://www.google.com/complete/search?client=*</code></li>
+                    <li>DuckDuckGo: <code>https://duckduckgo.com/ac/?q=*</code></li>
+                    <li>Brave: <code>https://search.brave.com/api/suggest?q=*</code></li>
+                    <li>Wikipedia: <code>https://*.wikipedia.org/w/api.php?action=opensearch&search=*</code></li>
+                </ul>
+                <p>Они используются для предоставления предложений по автозаполнению при вводе в строку поиска. Вы можете контролировать
+                    к каким сайтам расширение может получить доступ, в настройках вашего браузера.</p>
+            </li>
+            <li><strong>Определение местоположения (<a href="https://ipinfo.io/" target="_blank">IPinfo</a>):</strong>
+                <ul>
+                    <li><code>https://ipinfo.io/json</code> – fetches approximate city-level location based on your IP
+                        for local weather display.</li>
+                </ul>
+            </li>
+            <li><strong>Обновления погоды (<a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a>):</strong>
+                <ul>
+                    <li><code>https://api.weatherapi.com/v1/forecast.json?key=*</code> – извлекает ежедневные прогнозы на основе
+                        от вашего местоположения и языковых предпочтений.</li>
+                    <li><code>https://api.weatherapi.com/v1/search.json?key=*</code> – используется для получения местоположения
+                        предложения при поиске города.</li>
+                </ul>
+            </li>
+            <li><strong>Случайные обои (<a href="https://picsum.photos/" target="_blank">Посмотрите фото</a>):</strong>
+                <ul>
+                    <li><code>https://picsum.photos/1920/1080</code> – используется для получения случайных изображений высокого качества.</li>
+                </ul>
+            </li>
+            <li><strong>Извлечение значков (API Favicon от Google):</strong>
+                <ul>
+                    <li><code>https://s2.googleusercontent.com/s2/favicons*</code></li>
+                    <li><code>https://www.google.com/s2/favicons*</code></li>
+                </ul>
+                Они используются для получения значков веб-сайтов для ярлыков и закладок.
+            </li>
+        </ul>
+        <h3>Прокси-сервер (необязательно)</h3>
+        <p>
+            MYNT: Новая вкладка Material You включает дополнительную функцию прокси, которая <strong>отключено по умолчанию</strong>.
+            Эту функцию можно использовать для обхода ограничений CORS при получении поисковых предложений.
+        </p>
+        <p>
+            Для пользователей, которые хотят включить эту функцию, мы <strong>очень рекомендую <a
+                    href="https://github.com/Minuga-RC/MYNT-CORS-Bypass-Proxy" target="_blank">хостинг свой собственный
+                    прокси-сервер</a></strong> для сохранения полного контроля и обеспечения максимальной конфиденциальности.
+        </p>
+        <p>
+            If enabled and left at the default setting, search suggestion requests will be routed through the public
+            proxy at: <code>https://mynt-proxy.rhythmcorehq.com</code>.
+        </p>
+        <h2>Прозрачность и безопасность</h2>
+        <p>Хотя мы стремимся обеспечить безопасность нашего кода, мы признаем, что ни один проект не застрахован от потенциальных
+            проблемы. В редких случаях непреднамеренный код или ошибки могут быть внесены в результате внесения изменений. Мы поощряем
+            пользователи могут просматривать исходный код непосредственно на GitHub для душевного спокойствия. Пожалуйста, используйте это расширение только тогда, когда
+            вас полностью устраивает его содержимое.</p>
+        <h2>Спасибо</h2>
+        <p>Благодарим вас за доверие к расширению MYNT: Material You New Tab. Мы надеемся, что это улучшит ваш просмотр
+            опыт работы с каждой новой вкладкой, которую вы открываете!</p>
+    </div>
+    <script>
+        // Логика переключения темного режима
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const container = document.getElementById('mainContainer');
+        const iconPath = document.getElementById('iconPath');
+        let isDark = localStorage.getItem('mynt-dark-mode');
+        // SVG-пути
+        const moonPath = "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z";
+        const sunPath = "M11 4V1h2v3zm0 19v-3h2v3zm9-10v-2h3v2zM1 13v-2h3v2zm17.7-6.3l-1.4-1.4l1.75-1.8l1.45 1.45zM4.95 20.5L3.5 19.05l1.8-1.75l1.4 1.4zm14.1 0l-1.75-1.8l1.4-1.4l1.8 1.75zM5.3 6.7L3.5 4.95L4.95 3.5L6.7 5.3zM12 18q-2.5 0-4.25-1.75T6 12t1.75-4.25T12 6t4.25 1.75T18 12t-1.75 4.25T12 18";
+        function setDarkMode(isDark) {
+            document.body.classList.toggle('dark-mode', isDark);
+            container.classList.toggle('dark-mode', isDark);
+            iconPath.setAttribute('d', isDark ? sunPath : moonPath);
+            localStorage.setItem('mynt-dark-mode', isDark);
+        }
+        // Определить исходное состояние
+        if (isDark === null) {
+            isDark = window.matchMedia('(предпочитает цветовую схему: темную)').matches;
+        } else {
+            isDark = isDark === 'true';
+        }
+        setDarkMode(isDark);
+        toggleBtn.addEventListener('click', () => {
+            const newDarkState = !document.body.classList.contains('dark-mode');
+            setDarkMode(newDarkState);
+        });
+    </script>
+</body>
+</html>
